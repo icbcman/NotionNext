@@ -39,9 +39,9 @@ function SiteInfo({ title }) {
         </span>
         <br />
         <span className='text-xs font-serif'>
-          Powered by &nsp
+          Powered by  
           <a href='https://github.com/icbcman/NotionNext' className='underline'>
-            Notion-Next  {siteConfig('VERSION')}
+            NotionNext-  {siteConfig('VERSION')}
           </a>
         </span>
         <br />
