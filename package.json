@@ -1,6 +1,6 @@
 {
   "name": "notion-next",
-  "version": "4.9",
+  "version": "2025.10.02",
   "homepage": "https://github.com/icbcman/NotionNext.git",
   "license": "MIT",
   "engines": {
@@ -11,9 +11,9 @@
     "url": "https://github.com/icbcman/NotionNext.git"
   },
   "author": {
-    "name": "tangly",
-    "email": "mail@tangly1024.com",
-    "url": "http://tangly1024.com"
+    "name": "icbcman",
+    "email": "z_x@outlook.com",
+    "url": "https://www.zhangxiang.xyz"
   },
   "scripts": {
     "dev": "next dev",
@@ -105,7 +105,7 @@
     "axios": ">=0.21.1"
   },
   "bugs": {
-    "url": "https://github.com/tangly/NotionNext/issues",
-    "email": "tlyong1992@hotmail.com"
+    "url": "https://github.com/icbcman/NotionNext/issues",
+    "email": "z_x@outlook.com"
   }
 }
