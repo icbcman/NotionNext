@@ -9,7 +9,7 @@ const CONFIG = {
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
     { title: '欢迎来到我的工作生活博客', url: 'https://wwwhome.cc' },
-    { title: '访问旧的github.io博客地址', url: 'https://www.zhangxiang.com' }
+    { title: '访问旧的github.io博客地址', url: 'https://www.zhangxiang.xyz' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -119,7 +119,7 @@ const CONFIG = {
   HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
   HEO_SOCIAL_CARD_TITLE_1: '交流频道',
   HEO_SOCIAL_CARD_TITLE_2: '联系我的社交软件讨论分享',
-  HEO_SOCIAL_CARD_TITLE_3: '点击添加联系方式',
+  HEO_SOCIAL_CARD_TITLE_3: '添加联系方式：z_x@outlook.com',
   HEO_SOCIAL_CARD_URL: 'https://www.zhangxiang.xyz',
 
   // 底部统计面板文案
