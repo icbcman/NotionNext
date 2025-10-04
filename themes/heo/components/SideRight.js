@@ -49,6 +49,9 @@ export default function SideRight(props) {
           <TouchMeCard />
         </div>
 
+        {/* 动画pet widge */}        
+        <Live2D />
+          
         {/* 最新文章列表 */}
         <div
           className={
@@ -60,7 +63,6 @@ export default function SideRight(props) {
         {rightAreaSlot}
 
         <FaceBookPage />
-        <Live2D />
 
         {/* 标签和成绩 */}
         <Card
