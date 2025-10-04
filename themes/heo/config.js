@@ -9,7 +9,7 @@ const CONFIG = {
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
     { title: '欢迎来到我的工作生活博客', url: 'https://wwwhome.cc' },
-    { title: '访问旧的github.io博客地址', url: 'https://www.zhangxiang.xyz' }
+    { title: '访问旧的博客主题', url: 'https://www.wwwhome.cc/?theme=fukasawa' }
   ],
 
   // 英雄区左右侧组件颠倒位置
