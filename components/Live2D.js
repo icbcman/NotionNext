@@ -55,6 +55,38 @@ export default function Live2D() {
       onMouseUp={e => e.target.classList.remove('cursor-grabbing')}
     />
 
+<script>
+  // 监听 live2d 的事件
+function addLive2DEvents() {
+  const live2dWidget = document.getElementById('live2d');
+  if (!live2dWidget) {
+    console.error("无法找到Live2D元素");
+    return;
+  }
+    const tapSound = document.getElementById('tap_body');
+  const hoverSound = document.getElementById('shake');
+  // 检查声音元素是否存在
+  if (!tapSound || !hoverSound) {
+    console.error("声音元素未正确加载");
+    return;
+  }
+  // 添加触摸和点击事件监听器以支持更多设备
+  live2dWidget.addEventListener('touchend', function () {
+    tapSound.play().catch(error => console.warn('无法播放点击声音:', error));
+  });
+  live2dWidget.addEventListener('click', function () {
+    tapSound.play().catch(error => console.warn('无法播放点击声音:', error));
+  });
+  // 添加鼠标悬停事件
+  live2dWidget.addEventListener('mouseenter', function () {
+    hoverSound.play().catch(error => console.warn('无法播放悬停声音:', error));
+  });
+}
+// 确保DOM完全加载后再执行
+document.addEventListener('DOMContentLoaded', function () {
+  addLive2DEvents();
+})
+</script>
   
   )
 }
