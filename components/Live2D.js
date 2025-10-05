@@ -54,5 +54,23 @@ export default function Live2D() {
       onMouseDown={e => e.target.classList.add('cursor-grabbing')}
       onMouseUp={e => e.target.classList.remove('cursor-grabbing')}
     />
+
+<script>
+  // 监听 live2d 的事件
+  function addLive2DEvents() {
+    const live2d1 = document.getElementById('live2d');
+    const tapSound = document.getElementById('head');
+    const hoverSound = document.getElementById('body');
+    live2d1.addEventListener('touchend', function() {
+      tapSound.play();
+    });
+    live2d1.addEventListener('mouseover', function() {
+      hoverSound.play();
+    });
+  }
+  // 初始化并添加事件监听器
+  addLive2DEvents();
+</script>
+  
   )
 }
