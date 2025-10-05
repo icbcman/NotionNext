@@ -59,8 +59,8 @@ export default function Live2D() {
   // 监听 live2d 的事件
   function addLive2DEvents() {
     const live2d1 = document.getElementById('live2d');
-    const tapSound = document.getElementById('head');
-    const hoverSound = document.getElementById('body');
+    const tapSound = document.getElementById('tap_body');
+    const hoverSound = document.getElementById('shake');
     live2d1.addEventListener('touchend', function() {
       tapSound.play();
     });
