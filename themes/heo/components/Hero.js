@@ -125,7 +125,7 @@ function TagsGroupBar() {
     groupIcons = groupIcons.concat(groupIcons)
   }
   return (
-    <div className='tags-group-all flex -rotate-[1deg] h-full'>
+    <div className='tags-group-all flex -rotate-[30deg] h-full'>
       <div className='tags-group-wrapper flex flex-nowrap absolute top-16'>
         {groupIcons?.map((g, index) => {
           return (
