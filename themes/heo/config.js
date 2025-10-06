@@ -51,9 +51,9 @@ const CONFIG = {
   // 个人资料底部按钮
   HEO_INFO_CARD_URL1: '/',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/icbcman',
+  HEO_INFO_CARD_URL2: 'https://github.com/',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.zhangxiang.xyz',
+  HEO_INFO_CARD_URL3: '/about',
   HEO_INFO_CARD_TEXT3: '了解更多',
 
   // 用户技能图标
@@ -120,7 +120,7 @@ const CONFIG = {
   HEO_SOCIAL_CARD_TITLE_1: '交流频道',
   HEO_SOCIAL_CARD_TITLE_2: '联系我的社交软件讨论分享',
   HEO_SOCIAL_CARD_TITLE_3: '添加联系方式：z_x@outlook.com',
-  HEO_SOCIAL_CARD_URL: 'https://www.zhangxiang.xyz',
+  HEO_SOCIAL_CARD_URL: '/about',
 
   // 底部统计面板文案
   HEO_POST_COUNT_TITLE: '文章数:',
