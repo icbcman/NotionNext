@@ -117,7 +117,7 @@ function Banner(props) {
 
 /**
  * 图标滚动标签组
- * 英雄区左上角banner条中斜向滚动的图标
+ * 英雄区左上角banner条中斜向滚动的图标30度[30deg]
  */
 function TagsGroupBar() {
   let groupIcons = siteConfig('HEO_GROUP_ICONS', null, CONFIG)
@@ -125,7 +125,7 @@ function TagsGroupBar() {
     groupIcons = groupIcons.concat(groupIcons)
   }
   return (
-    <div className='tags-group-all flex -rotate-[30deg] h-full'>
+    <div className='tags-group-all flex -rotate-[1deg] h-full'>
       <div className='tags-group-wrapper flex flex-nowrap absolute top-16'>
         {groupIcons?.map((g, index) => {
           return (
