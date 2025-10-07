@@ -136,7 +136,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_1 }}
                 className={
-                  'tags-group-icon w-28 h-28 rounded-3xl flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon w-24 h-24 rounded-3xl flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }>
                 <LazyImage
                   priority={true}
@@ -148,7 +148,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_2 }}
                 className={
-                  'tags-group-icon  mt-5 w-28 h-28 rounded-3xl flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon  mt-5 w-24 h-24 rounded-3xl flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }>
                 <LazyImage
                   priority={true}
