@@ -124,9 +124,12 @@ function TagsGroupBar() {
   if (groupIcons) {
     groupIcons = groupIcons.concat(groupIcons)
   }
+  /**
+ * 分类按钮上移（top-16改为6）
+ */
   return (
     <div className='tags-group-all flex -rotate-[0deg] h-full'>  
-      <div className='tags-group-wrapper flex flex-nowrap absolute top-16'>
+      <div className='tags-group-wrapper flex flex-nowrap absolute top-6'>
         {groupIcons?.map((g, index) => {
           return (
             <div key={index} className='tags-group-icon-pair ml-6 select-none'>
