@@ -102,8 +102,8 @@ function Banner(props) {
         id='banner-cover'
         style={{ backdropFilter: 'blur(15px)' }}
         className={
-          'z-20 rounded-xl overflow-hidden opacity-0 group-hover:opacity-70 duration-300 transition-all bg-[#4259efdd] dark:bg-[#dca846] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
-        }>
+          'z-20 rounded-xl overflow-hidden opacity-0 group-hover:opacity-0 duration-300 transition-all bg-[#4259efdd] dark:bg-[#dca846] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
+        }>  // 调整group-hover透明度opacity
         <div className='ml-12 -translate-x-32 group-hover:translate-x-0 duration-300 transition-all ease-in'>
           <div className='text-7xl text-white font-extrabold'>{coverTitle}</div>
           <div className='-ml-3 text-gray-300'>
@@ -125,7 +125,7 @@ function TagsGroupBar() {
     groupIcons = groupIcons.concat(groupIcons)
   }
   return (
-    <div className='tags-group-all flex -rotate-[30deg] h-full'>
+    <div className='tags-group-all flex -rotate-[0deg] h-full'>  // 调整倾斜角度为0
       <div className='tags-group-wrapper flex flex-nowrap absolute top-16'>
         {groupIcons?.map((g, index) => {
           return (
