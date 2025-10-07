@@ -16,14 +16,14 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享生活',
-  HEO_HERO_TITLE_2: '分享工作',
-  HEO_HERO_TITLE_3: '强思健体',
-  HEO_HERO_TITLE_4: '互联网趣闻',
-  HEO_HERO_TITLE_5: '摄影知识',
+  HEO_HERO_TITLE_1: ' ',   // 分享生活
+  HEO_HERO_TITLE_2: ' ', // 分享工作
+  HEO_HERO_TITLE_3: ' ', // 强思健体
+  HEO_HERO_TITLE_4: '互联网趣闻',  // 右侧
+  HEO_HERO_TITLE_5: '摄影知识', // 右侧
   HEO_HERO_TITLE_LINK: 'https://wwwhome.cc',
   // 英雄区遮罩文字
-  HEO_HERO_COVER_TITLE: '记录与分享',
+  HEO_HERO_COVER_TITLE: ' ', // 记录与分享
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '思考&健身', url: '/tag/健康' },
