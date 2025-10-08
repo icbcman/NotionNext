@@ -1,7 +1,7 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/article/how-to-config-notion-next#c4768010ae7d44609b744e79e2f9959a
 
 const BLOG = {
-  API_BASE_URL: process.env.API_BASE_URL || 'https://www.notion.so/api/v3', // API默认请求地址,可以配置成自己的地址例如：https://[xxxxx].notion.site/api/v3
+  API_BASE_URL: process.env.API_BASE_URL || 'https://zhang-xiang.notion.so/api/v3', // API默认请求地址,可以配置成自己的地址例如：https://[xxxxx].notion.site/api/v3
   // Important page_id！！！Duplicate Template from  https://tanghh.notion.site/02ab3b8678004aa69e9e415905ef32a5
   NOTION_PAGE_ID:
     process.env.NOTION_PAGE_ID ||
@@ -20,7 +20,7 @@ const BLOG = {
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://wwwhome.cc', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'zhangxiang,博客,工作与生活', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
-  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '苏ICP备2025211927号-1', // 备案号 苏ICP备XXXXXX
+  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '苏ICP备2025211927号', // 备案号 苏ICP备XXXXXX
   BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://beian.miit.gov.cn/', // 备案查询链接，如果用了萌备等备案请在这里填写
   BEI_AN_GONGAN: process.env.NEXT_PUBLIC_BEI_AN_GONGAN || '国公网安备5xxxxxxxx8号', // 公安备案号，例如 '浙公网安备3xxxxxxxx8号'
 
