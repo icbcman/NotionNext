@@ -1,0 +1,121 @@
+1、docker-ghcr.yaml：
+增加workflow_dispatch:
+
+2、blog.config.js：
+process.env.NOTION_PAGE_ID ||    '02ab3b8678004aa69e9e415905ef32a5,
+env.NEXT_PUBLIC_SINCE || 2025
+env.NEXT_PUBLIC_THEME || 'fukasawa',
+ AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'zhangxiang'
+NEXT_PUBLIC_BEI_AN ||'苏ICP备2025211927号-1'
+BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的人🍚', // 作者简介
+KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'zhangxiang,博客,工作与生活'
+ BEI_AN_GONGAN: process.env.NEXT_PUBLIC_BEI_AN_GONGAN || '苏公网安备8xxxxxxxx8号',  '苏公网安备32010602012185号',
+增加  API_BASE_URL: process.env.API_BASE_URL || 'https://www.notion.so/api/v3', // API默认请求地址,可以配置成自己的地址例如：https://[xxxxx].notion.site/api/v3
+
+3、components\PoweredBy.js：
+ href='https://github.com/icbcman/NotionNext'
+ Notion-----Next {siteConfig('VERSION')}
+
+4、themes\fukasawa\components\SiteInfo.js：
+href='https://github.com/icbcman/NotionNext'
+
+5、package.json：
+"version": "4.9",
+  "homepage": "https://github.com/icbcman/NotionNext.git",
+url": "https://github.com/icbcman/NotionNext.git"
+"name": "icbcman",
+    "email": "z_x@outlook.com",
+    "url": "https://www.zhangxiang.xyz"
+    "url": "https://wwwhome.cc"
+
+6、conf\widget.config.js：
+    'https://cdn.jsdelivr.net/npm/live2d-widget-model-haru/01/assets/haru01.model.json', // 挂件模型地址     process.env.NEXT_PUBLIC_WIDGET_PET_SWITCH_THEME || false, // 点击宠物挂件切换博客主题
+
+7、components\Live2D.js
+   height='300'
+
+8、components\PoweredBy.js
+   NotionNext- {siteConfig('VERSION')}
+
+9、themes\heo\config.js
+较多文字配置修改
+
+10、themes\heo\components\SideRight.js
+pet位置往上
+
+11、public\images\heo\1.png
+一堆首页icon上传及修改
+
+12、public\favicon.ico 修改
+
+13、public\baidu_verify_codeva-DkVlnBl02R.html
+
+14、themes\heo\components\Hero.js
+英雄区左上角banner条中斜向滚动的图标30度[30deg]
+
+15、public\my404.gif 自己的gif：themes\heo\index.js
+             404       src={     'https://bu.dusays.com/2023/03/03/6401a7906aa4a.gif'
+
+16、themes\heo\config.js
+  （1）参数 // 英雄区右侧推荐文章遮罩控制
+  HEO_HERO_RECOMMEND_COVER_ENABLE: false, // 是否显示推荐文章遮罩图片，true显示遮罩需点击查看，false直接显示推荐文章
+
+17、themes\heo\components\Hero.js
+  // 卡牌是否盖住下层
+  const [isCoverUp, setIsCoverUp] = useState(true)  改为
+  // 获取遮罩控制配置
+  const coverEnable = siteConfig('HEO_HERO_RECOMMEND_COVER_ENABLE', true, CONFIG)
+  // 卡牌是否盖住下层，如果配置为false则默认不盖住
+  const [isCoverUp, setIsCoverUp] = useState(coverEnable)
+        setIsCoverUp(true) 改为
+        if (coverEnable) {
+          setIsCoverUp(true)
+        }
+      }
+  // 如果配置为不显示遮罩，则不渲染TodayCard
+ 增加 if (!coverEnable) {
+    return null
+  }
+
+18、themes\heo\components\Hero.js
+透明 group-hover:opacity-0
+
+19、themes\heo\config.js 去除文字
+  HEO_HERO_TITLE_1: ' ',   // 分享生活
+  HEO_HERO_TITLE_2: ' ', // 分享工作
+  HEO_HERO_TITLE_3: ' ', // 强思健体
+  HEO_HERO_TITLE_4: '互联网趣闻',  // 右侧
+  HEO_HERO_TITLE_5: '摄影知识', // 右侧
+ <div className='tags-group-all flex -rotate-[0deg] h-full'>  
+ * 分类按钮上移（top-16改为6）<div className='tags-group-wrapper flex flex-nowrap absolute top-6'>
+  'tags-group-icon w-24 h-24  
+
+20、lib\lang\zh-CN.js  此刻
+
+21、lib\db\getSiteData.js
+ const defaultTitle = NOTION_CONFIG?.TITLE || 'WwwHome BLOG'
+    NOTION_CONFIG?.DESCRIPTION || '这是一个由Notion生成的站点'
+
+22、.env.example
+增加 API_BASE_URL=https://www.notion.so/api/v3
+
+23、lib\db\getSiteData.js 
+        pageCoverThumbnail: BLOG.HOME_BANNER_IMAGE || '/bg_image.jpg',
+
+24、lib\notion\getNotionAPI.js
+    apiBaseUrl: BLOG.API_BASE_URL || 'https://www.notion.so/api/v3', // https://[xxxxx].notion.site/api/v3
+
+25、lib\notion\getAllPageIds.js
+export default function getAllPageIds (collectionQuery, collectionId, collectionView, viewIds) {改为
+export default function getAllPageIds(collectionQuery, collectionId, collectionView, viewIds) {
+      for (const id of ids) {
+        pageIds.push(id)改为
+      if (ids) {
+        for (const id of ids) {
+          pageIds.push(id)
+        }
+
+26、conf\analytics.config.js 
+百度谷歌51la
+
+
