@@ -18,7 +18,7 @@ export default function Live2D() {
     if (showPet && !isMobile()) {
       Promise.all([
         loadExternalResource(
-          'https://raw.githubusercontent.com/icbcman/live2d-widget-models/refs/heads/master/dist/live2d.core.js',
+          'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js',
           'js'
         )
       ]).then(e => {
