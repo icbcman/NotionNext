@@ -7,13 +7,13 @@ module.exports = {
     process.env.NEXT_PUBLIC_COMMENT_HIDE_SINGLE_TAB || false, // Whether hide the tab when there's no tabs. 只有一个评论组件时是否隐藏切换组件的标签页
 
   // artalk 评论插件
-  COMMENT_ARTALK_SERVER: process.env.NEXT_PUBLIC_COMMENT_ARTALK_SERVER || 'https://artalk.wwwhome.cc', // ArtalkServert后端地址 https://artalk.js.org/guide/deploy.html
+  COMMENT_ARTALK_SERVER: process.env.NEXT_PUBLIC_COMMENT_ARTALK_SERVER || 'http://8.148.234.40:8500', // ArtalkServert后端地址 https://artalk.js.org/guide/deploy.html
   COMMENT_ARTALK_JS:
     process.env.NEXT_PUBLIC_COMMENT_ARTALK_JS ||
-    'https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.min.js', // 'https://cdnjs.cloudflare.com/ajax/libs/artalk/2.5.5/Artalk.js'  -----ArtalkServert js cdn
+    'https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.min.js', // -----ArtalkServert js cdn
   COMMENT_ARTALK_CSS:
     process.env.NEXT_PUBLIC_COMMENT_ARTALK_CSS ||
-    'https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.min.css',  //'https://cdnjs.cloudflare.com/ajax/libs/artalk/2.5.5/Artalk.css'  -----ArtalkServert css cdn
+    'https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.min.css',  // -----ArtalkServert css cdn
 
   // twikoo
   COMMENT_TWIKOO_ENV_ID: process.env.NEXT_PUBLIC_COMMENT_ENV_ID || 'https://twikoo.wwwhome.cc', // TWIKOO后端地址 腾讯云环境填envId；Vercel环境填域名，教程：https://tangly1024.com/article/notionnext-twikoo
