@@ -39,8 +39,8 @@ jobs:
           platforms: linux/amd64
           push: false
           tags: |
-            NotionNext:latest
-            NotionNext:${{ github.sha }}
+            NotionNext1:latest
+            NotionNext1:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -61,8 +61,8 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/NotionNext:latest
-            ghcr.io/${{ github.repository_owner }}/NotionNext:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/NotionNext1:latest
+            ghcr.io/${{ github.repository_owner }}/NotionNext1:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
