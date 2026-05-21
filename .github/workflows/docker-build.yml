@@ -58,7 +58,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/katelyatv:latest
@@ -75,7 +75,7 @@ jobs:
       - name: Test Summary
         run: |
           echo "✅ Docker build completed successfully!"
-          echo "📦 Multi-platform support: linux/amd64, linux/arm64, linux/arm/v7"
+          echo "📦 Multi-platform support: linux/amd64"
           echo "🔄 Cache optimization enabled"
           if [ "${{ github.event_name }}" != "pull_request" ] && [ "${{ github.ref }}" == "refs/heads/main" ]; then
             echo "🚀 Images pushed to GitHub Container Registry"
